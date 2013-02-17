@@ -1,0 +1,16 @@
+setrootimage - Puts a nice diagonal gradient image on the root window.
+
+usage: setrootimage [options]
+options are: -display <display>, -from <color>, -to <color>
+
+example:
+	setrootimage -from 708090 -to cccccc
+
+-------------------------------------------------------------------------
+Author: Frank Hale
+Email: frankhale@gmail.com
+
+This code makes use of a version of the Blackbox image code. Many thanks
+go out to Brad Hughes the author of the Blackbox window manager.
+
+Released under the terms of the GNU GPL. www.gnu.org

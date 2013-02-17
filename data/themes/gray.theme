@@ -1,0 +1,110 @@
+titlebar.style: Gradient Horizontal Raised Bevel
+button.style: Gradient Diagonal Raised Bevel
+toolbar.style: Gradient Vertical Flat Bevel
+clock.style: Gradient Diagonal Sunken Bevel
+menu.style: Gradient Diagonal Flat
+menutitle.style: Gradient Horizontal Flat Bevel
+menuselect.style: Solid Flat
+resize.style: Gradient Diagonal Raised Bevel
+handle.style: Gradient Diagonal Raised Bevel
+root.background: true
+root.style: Solid
+
+titlebar.color.from.red: 	122
+titlebar.color.from.green:	125
+titlebar.color.from.blue:	137
+
+titlebar.color.to.red: 		200
+titlebar.color.to.green:	200
+titlebar.color.to.blue:		200
+
+button.color.from.red: 		225
+button.color.from.green:	225
+button.color.from.blue:		225
+
+button.color.to.red: 		111
+button.color.to.green:		111
+button.color.to.blue:		111
+
+clock.color.from.red: 		122
+clock.color.from.green:		125
+clock.color.from.blue:		137
+
+clock.color.to.red: 		225
+clock.color.to.green:		225
+clock.color.to.blue:		225
+
+toolbar.color.from.red: 	122
+toolbar.color.from.green:	125
+toolbar.color.from.blue:	137
+
+toolbar.color.to.red: 		225
+toolbar.color.to.green:		225
+toolbar.color.to.blue:		225
+
+menu.color.from.red: 		122
+menu.color.from.green:		125
+menu.color.from.blue:		137
+
+menu.color.to.red: 		255
+menu.color.to.green:		255
+menu.color.to.blue:		255
+
+menuTitle.color.from.red: 	147
+menuTitle.color.from.green:	150
+menuTitle.color.from.blue:	160
+
+menuTitle.color.to.red: 	200
+menuTitle.color.to.green:	200
+menuTitle.color.to.blue:	200
+
+menuSelect.color.from.red: 	111
+menuSelect.color.from.green:	111
+menuSelect.color.from.blue:	111
+
+menuSelect.color.to.red: 	255
+menuSelect.color.to.green:	255
+menuSelect.color.to.blue:	255
+
+resize.color.from.red: 		200
+resize.color.from.green:	200
+resize.color.from.blue:		200
+
+resize.color.to.red: 		255
+resize.color.to.green:		255
+resize.color.to.blue:		255
+
+handle.color.from.red: 		122
+handle.color.from.green:	125
+handle.color.from.blue:		137
+
+handle.color.to.red: 		255
+handle.color.to.green:		255
+handle.color.to.blue:		255
+
+font.color.from.red: 		0
+font.color.from.green:		0
+font.color.from.blue:		0
+
+font.color.to.red: 		0
+font.color.to.green:		0
+font.color.to.blue:		0
+
+menufont.color.from.red: 	0
+menufont.color.from.green:	0
+menufont.color.from.blue:	0
+
+menufont.color.to.red: 		0
+menufont.color.to.green:	0
+menufont.color.to.blue:		0
+
+root.color.from.red: 		122
+root.color.from.green:		125
+root.color.from.blue:		137
+
+root.color.to.red: 		225
+root.color.to.green:		225
+root.color.to.blue:		225
+
+font: 	  -*-lucida-medium-r-normal-*-10-*-*-*-*-*-*-*
+menufont: -*-lucida-medium-r-normal-*-10-*-*-*-*-*-*-*

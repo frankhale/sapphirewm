@@ -1,0 +1,40 @@
+0.7 (12 Nov 2001)
+ 
+ * Fixed a header problem in the linked list code.
+ * Fixed a header problem in misc.hh
+
+0.6 (25 October 2001)
+
+ * linkedlist code clean ups
+ * icon updates (most icons are from http://wm-icons.sourceforge.net/data/wm-icons-current/icons/16x16-kde/)
+ * set _NET_WM_STRUT
+
+0.5 (9 October 2001)
+
+ * small bug window was getting moved on startup before it was mapped.
+
+0.4 (8 October 2001)
+
+ * code cleanup
+ * added GNOME hint for WIN_HINTS_DO_NOT_COVER so that it will stay on top
+   under compliant window managers.
+ * added configuration of background gradient pixmap
+ * added configuration of appbar placement to each corner of the screen.
+
+0.3 (alpha) - (25 July 2001)
+
+* Sample rc file was accidentally copied over by the test rc file so
+  it had the wrong paths for the icons.
+
+0.2 (alpha) - (24 July 2001)
+
+* Deleted some erroneous XClearWindow calls.
+* Added vertical toolbar feature.
+* Added vertical_placement and horizontal_placement to configuration file.
+* Fixed bug with configuration if it found no icons (it wasn't returning from the loop)
+* Updates to the README file.
+
+0.1 (alpha) - (19 July 2001)
+
+* Initial release of Appbar. This is alpha quality code. Expect bugs!
+

@@ -1,0 +1,52 @@
+menu(Sapphire 0.15.x)
+{
+	submenu (terminals)
+	{
+		exec (xterm) {xterm -bg black -fg white}
+		exec (rxvt)  {rxvt -bg black -fg white}
+	}
+	
+	submenu (internet)
+	{
+		exec (netscape) {netscape}
+		exec (licq)  	{licq}
+	}
+	
+	submenu (utilities)
+	{
+		submenu (editors)
+		{
+			exec (nedit) {nedit}
+			exec (xedit) {xedit}
+			exec (emacs) {emacs}
+		}
+		
+		submenu (other)
+		{
+			exec (xload) 	{xload}
+			exec (xosview) 	{xosview}
+			exec (xclock) 	{xclock}
+			exec (xcalc) 	{xcalc}
+		}
+	}
+	
+	submenu (fun)
+	{
+		exec (xeyes) {xeyes}
+		exec (xlogo) {xlogo}
+	}
+
+	submenu (themes)
+	{
+		theme (default) {/usr/share/sapphire/themes/default.theme}
+		theme (darkblue){/usr/share/sapphire/themes/darkblue.theme}
+		theme (slate)   {/usr/share/sapphire/themes/slate.theme}
+		theme (rose)    {/usr/share/sapphire/themes/rose.theme}
+		theme (gray)    {/usr/share/sapphire/themes/gray.theme}
+	}
+		
+	separator
+	reconfigure
+	restart
+	exit
+}

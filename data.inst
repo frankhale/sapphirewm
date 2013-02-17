@@ -1,0 +1,54 @@
+#!/bin/bash
+#
+# Sapphire 0.15.4 and above
+#
+# This script is putting configurations files in place so Sapphire can run properly.
+#
+# Date: 6 Nov 2000
+
+###############################################################
+# DO NOT HAND EDIT THIS VARIABLE. SAPPHIRE WILL LOOK HERE
+# ANYWAY. IF YOU HAND EDIT THIS BAD THINGS WILL SURELY HAPPEN
+# POSSIBLY COREDUMPS OR SEGMENTATION FAULTS.
+#
+# THIS WILL REMAIN LIKE THIS UNTIL SAPPHIRE HAS BETTER HANDLING
+# OF CONFIGURATION FILES.
+CONFIGURATION_PATH=/usr/local/share/sapphire
+###############################################################
+
+if [ -d $CONFIGURATION_PATH ]
+then
+	echo "$CONFIGURATION_PATH directory already exists";
+else
+	mkdir $CONFIGURATION_PATH
+	echo "created directory $CONFIGURATION_PATH";
+fi
+
+# Check to see if there is a themes directory
+if [ -d $CONFIGURATION_PATH/themes ]
+then
+	echo "$CONFIGURATION_PATH directory already exists, copying over current themes";	
+	cp data/themes/* $CONFIGURATION_PATH/themes
+else
+	mkdir $CONFIGURATION_PATH/themes
+	echo "created directory $CONFIGURATION_PATH/themes";
+	
+	cp data/themes/* $CONFIGURATION_PATH/themes
+	echo "themes were copied to $CONFIGURATION_PATH/themes";
+fi
+	
+# Check to see if there is a menu directory
+if [ -d $CONFIGURATION_PATH/menu ]
+then
+	echo "$CONFIGURATION_PATH/menu directory already exists, copying over current menu files";
+	cp data/menu/* $CONFIGURATION_PATH/menu
+else
+	mkdir $CONFIGURATION_PATH/menu
+	echo "created directory $CONFIGURATION_PATH/menu";	
+	
+	cp data/menu/* $CONFIGURATION_PATH/menu
+	echo "menu files were copied to $CONFIGURATION_PATH/menu";
+fi
+
+echo
+echo "Installation of Sapphire's configuration files is complete.";

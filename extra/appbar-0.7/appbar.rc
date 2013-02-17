@@ -1,0 +1,64 @@
+vertical_placement
+northwest_placement
+
+appbar_color_from { 
+	red=aa;
+	green=aa;
+	blue=aa;
+}
+
+appbar_color_to {
+	red=cc;
+	green=cc;
+	blue=cc;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/terminal.xpm; 
+	execute = xterm -bg black -fg white -ls -sb;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/netscape.xpm; 
+	execute = /opt/mozilla/./mozilla;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/gimp.xpm;
+	execute = gimp;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/editor.xpm; 
+	execute = nedit;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/calculator.xpm; 
+	execute = xcalc;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/chat.xpm; 
+	execute = xchat;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/clock.xpm; 
+	execute = xclock;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/music.xpm; 
+	execute = xmms;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/icq.xpm; 
+	execute = gnomeicu -a;
+}
+
+icon {
+	image = /usr/X11/share/appbar/images/jext.xpm;
+	execute = /opt/jext/bin/jext;
+}

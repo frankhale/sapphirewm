@@ -1,0 +1,41 @@
+horizontal_placement
+
+icon { 
+	image = images/terminal.xpm; 
+	execute = xterm -bg black -fg white -ls;
+}
+
+icon { 
+	image = images/netscape.xpm; 
+	execute = /opt/mozilla/./mozilla;
+}
+
+icon { 
+	image = images/gimp.xpm;
+	execute = gimp;
+}
+
+icon { 
+	image = images/editor.xpm; 
+	execute = nedit;
+}
+
+icon { 
+	image = images/calculator.xpm; 
+	execute = xcalc;
+}
+
+icon { 
+	image = images/chat.xpm; 
+	execute = xchat;
+}
+
+icon { 
+	image = images/clock.xpm; 
+	execute = xclock;
+}
+
+icon { 
+	image = images/music.xpm; 
+	execute = xmms;
+}

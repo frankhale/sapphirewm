@@ -1,0 +1,133 @@
+Frank Hale <frankhale@gmail.com>
+Last Update: November 2001
+
+Description:
+------------
+
+Appbar is a small application launcher. It uses small 16x16 pixmaps to form
+icons so that you can quickly launch your favorite programs.
+
+NOTE: Currently using any other size pixmap will result in unwanted behavior in
+that the appbar main window will not have proper placement of those icons. 
+
+Compile:
+--------
+
+Edit the Makefile to your fancy. Look in misc.hh at the top and there will be a
+macro for the rc file. Change this to your liking. Then change the make install
+portion so it puts the files in the place you want it.
+
+#define APPBAR_RC_FILE "/etc/X11/appbar/appbar.rc"
+
+Change this to whatever you like. A sample rc file has been included to get you
+started.
+
+To compile appbar simply type make. To install it type make install. You can
+uninstall this application by running make uninstall. It will uninstall all
+files installed by the make install process.
+
+The install process installs some pixmaps into /usr/X11/share/appbar/images/,
+these are 16x16 pixmaps for use with the appbar. They were downloaded from 
+http://wm-icons.sourceforge.net/data/wm-icons-current/icons/16x16-general/ and
+are GPL'd.
+
+RC file syntax:
+---------------
+
+The resource file syntax is simple. A definition of an icon looks like the
+following.
+
+use vertical_placement or horizontal_placement to customize the appbar 
+look.
+
+icon { 
+	image = images/terminal.xpm; 
+	execute = xterm -bg black -fg white -ls;
+}
+
+Inside the icon construct you have two additional variables. The first variable
+is the name of the image followed by an equals sign then the path and filename
+of the xpm followed by a semi-colon.
+
+The second variable is execute. Its syntax is similar in that the only
+difference from images is the path to the executable you wish this icon to
+launch when clicked.
+
+For appbar placement use the following commands in the rc file.
+
+	Appbar Style
+	------------
+		vertical_placement
+		horizontal_placement
+	
+	Appbar Screen Placement
+	-----------------------
+		northwest_placement
+		northeast_placement
+		southwest_placement
+		southeast_placement
+		
+To configure a different background gradient for the appbar use the following
+commands.
+		
+	appbar_color_from { 
+		red=99;
+		green=99;
+		blue=99;
+	}
+
+	appbar_color_to {
+		red=cc;
+		green=cc;
+		blue=cc;
+	}
+
+NOTE: image and execute variables are ended with a semi-colon. The icon
+construct is enclosed in braces.
+
+Usage: Appbar is extremely simple to use. When icons are clicked they launch
+applications associated with them. When the grill is clicked (at the right edge)
+it shades the window to the upper left corner. Clicking it again unshades it to
+its original size. Middle clicking on the grill will close the application.
+
+Gradient Theme: Appbar takes advantage of blackbox's image gradient code. You
+can configure a different color theme only by editing appbar.cc in the appbar
+constructor. 
+
+Appbar uses a default icon which was taken from fspanel, credit goes to the 
+author for it. This icons purpose is a fail safe backup incase the requested
+icon cannot be found.
+
+RC FILE EXAMPLE
+---------------
+
+vertical_placement
+northwest_placement
+
+appbar_color_from { 
+	red=99;
+	green=99;
+	blue=99;
+}
+
+appbar_color_to {
+	red=cc;
+	green=cc;
+	blue=cc;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/terminal.xpm; 
+	execute = xterm -bg black -fg white -ls;
+}
+
+icon { 
+	image = /usr/X11/share/appbar/images/netscape.xpm; 
+	execute = /opt/mozilla/./mozilla;
+}
+
+*** LICENSE ****
+----------------
+
+Appbar is released under the terms of the GNU GPL. Refer to www.gnu.org for more
+details.
